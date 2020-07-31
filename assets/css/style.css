@@ -1,0 +1,259 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #555;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    padding: 100px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 3rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    text-transform: capitalize;
+}
+
+
+/* -------------------------------------------------
+E X E R C I S E   1  -------------------------------
+ */
+
+.exercise-1 {
+    background: #011627;
+    color: #fdfffc
+}
+
+#arr,
+#reversed_arr {
+    height: 40px;
+    /* margin-top: 20px; */
+    font-size: 24px;
+}
+
+button {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px 40px;
+    border-radius: 4px;
+    border: none;
+    background: #fdfffc;
+}
+
+
+/* -------------------------------------------------
+E X E R C I S E   2  -------------------------------
+ */
+
+.exercise-2 {
+    background: #fdfffc;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.breeds-scroll-container {
+    justify-content: center;
+    width: 100%;
+}
+
+.breeds-scroll {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    height: 400px;
+    width: 78%
+}
+
+.breeds-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding-bottom: 10px;
+}
+
+.breed {
+    width: 200px;
+    /* height: 18vw; */
+    margin: 10px;
+    background: #011627;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+.breed-c-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+    color: #fdfffc;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.breed-scroll-nav {
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    margin: 0 20px 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.breed-scroll-nav:focus {
+    outline: 0;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    margin: 0 20px 20px;
+    color: #011627;
+}
+
+
+/* -------------------------------------------------
+E X E R C I S E   3  -------------------------------
+ */
+
+.exercise-3 {
+    flex-direction: column;
+    color: #fdfffc;
+    padding: 10vh 0;
+    max-width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-image: url(https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+}
+
+.responsive-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: 10px;
+    color: #011627;
+    border-radius: 8px;
+    background: #fdfffc;
+}
+
+.card-c-child {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width:1024px) {
+    .responsive-container {
+        grid-template-columns: auto auto;
+    }
+    .card {
+        height: 300px;
+    }
+}
+
+@media (max-width:480px) {
+    .responsive-container {
+        grid-template-columns: auto;
+    }
+}
+
+
+/* -------------------------------------------------
+E X E R C I S E   4  -------------------------------
+ */
+
+.exercise-4 {
+    background: #fdfffc;
+    color: #011627
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+form>input,
+textarea {
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #011627;
+    padding: 8px!important;
+    color: #011627;
+}
+
+form>input,
+textarea::placeholder {
+    color: #0116275;
+}
+
+form>button {
+    border-radius: 30px;
+    background: #011627;
+    color: #fff;
+}
